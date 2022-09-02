@@ -16,19 +16,19 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("Single coil steps");
-  motor.step(100, FORWARD, SINGLE); 
-  motor.step(100, BACKWARD, SINGLE); 
+  //Serial.println("Single coil steps");
+  //motor.step(100, FORWARD, SINGLE); // Spin Up, Moves Down
+  motor.step(100, BACKWARD, SINGLE); //Sprin Down, Moves Up
 
-  Serial.println("Double coil steps");
-  motor.step(100, FORWARD, DOUBLE); 
-  motor.step(100, BACKWARD, DOUBLE);
-
-  Serial.println("Interleave coil steps");
-  motor.step(100, FORWARD, INTERLEAVE); 
-  motor.step(100, BACKWARD, INTERLEAVE); 
-
-  Serial.println("Micrsostep steps");
-  motor.step(100, FORWARD, MICROSTEP); 
-  motor.step(100, BACKWARD, MICROSTEP); 
+//  Serial.println("Double coil steps");
+//  motor.step(100, FORWARD, DOUBLE); 
+//  motor.step(100, BACKWARD, DOUBLE);
+//
+//  Serial.println("Interleave coil steps");
+//  motor.step(100, FORWARD, INTERLEAVE); 
+//  motor.step(100, BACKWARD, INTERLEAVE); 
+//
+//  Serial.println("Micrsostep steps");
+//  motor.step(100, FORWARD, MICROSTEP); 
+//  motor.step(100, BACKWARD, MICROSTEP); 
 }
